@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background: white;
+}
+
+/* HEADER */
+header .contenedor {
+    width: 90%;
+    max-width: 75rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 0;
+}
+
+header .contenedor .logo img {
+    width: 150px;
+}
+
+header .contenedor .informacion {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .informacion .info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header .informacion .info p:nth-child(2) {
+    color: rgb(2, 2, 111);
+    font-weight: 700;
+}
+
+header .informacion .fa-solid {
+    font-size: 2rem;
+    color: rgb(58, 188, 243);
+}
+
+/* NAV */
+nav {
+    background: rgb(2, 2, 111);
+}
+
+nav .contenedor {
+    width: 90%;
+    max-width: 68.7rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav .contenedor a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+main {
+    height: auto;
+    min-height: 70vh;
+    background-image: linear-gradient(180deg, rgba(44, 44, 246, 0.7), rgba(80, 80, 187, 0.4)), url(../img/bg-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .contenedor {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    color: white;
+}
+
+main .contenedor .texto h3 {
+    font-size: 3rem;
+    margin: 1.25rem 0;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+main .contenedor hr {
+    max-width: 56.25rem;
+    margin: auto;
+}
+
+main .contenedor .subtexto {
+    padding: 20px 0;
+    max-width: 50rem;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+/* SERVICIOS */
+.servicios {
+    vertical-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.servicios .contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.servicios .contenedor h3 {
+    font-size: 2rem;
+    color: rgb(58, 188, 243);
+    margin-bottom: 1.87rem;
+}
+
+.servicios .contenedor .imagenes {
+    display: flex;
+}
+
+.servicios .contenedor .imagenes .fa-solid {
+    font-size: 4rem;
+    color: blue;
+    margin: 1.87rem 0;
+}
+
+/* ADICIONAL */
+.adicional {
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.adicional .img {
+    grid-column: 1/2;
+    background-image: url(../img/worker.jpg);
+    background-size: cover;
+}
+
+.adicional .contenedor-grid {
+    grid-column: 2/-1;
+    background: rgb(58, 188, 243);
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    padding-right: 20px;
+}
+
+.adicional .contenedor-grid .texto {
+    grid-column: 2/-1;
+    grid-row: 3/-1;
+    color: white;
+}
+
+
+.adicional .contenedor-grid .texto .weight {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.adicional .contenedor-grid .texto .weight2 {
+    font-size: .87rem;
+}
+
+
+.adicional .contenedor-grid .texto p {
+    font-size: .87rem;
+}
+
+.adicional .contenedor-grid .column {
+    padding: 20px 0;
+}
+
+.adicional .contenedor-grid .texto .info {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 30px 0;
+    gap: 10px;
+}
+
+.adicional .contenedor-grid .texto .info .fa-solid {
+    font-size: 3rem;
+}
+
+.adicional button {
+    background: white;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 30px;
+    color: rgb(58, 188, 243);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.adicional button:hover {
+    transform: scale(1.1);
+}
+
+/* RECOMIENDA */
+.recomienda {
+    height: auto;
+    min-height: 60vh;
+}
+
+.recomienda .contenedor {
+    padding: 5rem 0;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.recomienda .contenedor h3 {
+    font-size: 2rem;
+    color: rgb(58, 188, 243);
+}
+
+.recomienda .contenedor .weight {
+    font-weight: 400;
+}
+
+.recomienda .contenedor .fa-solid {
+    font-size: 2.5rem;
+    color: rgb(58, 188, 243);
+    margin: 1.25rem 0;
+}
+
+/* FORMULARIO */
+.formulario {
+    background: linear-gradient(180deg, rgba(44, 44, 246, 0.8), rgba(44, 44, 246, 0.8)), url(../img/bg-form.jpg) no-repeat center;
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    height: auto;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario h3 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 3.75rem;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+.formulario .hrs {
+    font-weight: 700;
+}
+
+.formulario form {
+    width: 90%;
+    max-width: 50rem;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+}
+
+.formulario .form-text {
+    background: rgb(255 255 255 / .4);
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / .5);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+::placeholder {
+    color: rgb(255 255 255 / .4);
+}
+
+.formulario button {
+    color: white;
+    background: rgb(58, 188, 243);
+    cursor: pointer;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.formulario button:active {
+    background: white;
+    color: rgb(58, 188, 243);
+    box-shadow: 0 0 10px rgb(0 0 0 / .5);
+    transform: scale(.98);
+}
+
+/* FOOTER */
+footer {
+    padding: 1.25rem 3.12rem;
+    display: flex;
+    align-items: center;
+}
+
+footer .contenedor {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+}
+
+footer .logo {
+    grid-column: 1/7;
+    display: flex;
+    gap: 30px;
+    width: 90%;
+}
+
+footer .contenedor .texto p:nth-child(2) {
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+footer .logo img {
+    width: 150px;
+}
+
+footer .informacion {
+    grid-column: 8/-1;
+    display: flex;
+    gap: 50px;
+}
+
+footer .informacion .info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .informacion .info .fa-solid {
+    color: rgb(58, 188, 243);
+    font-size: 2.5rem;
+}
+
+footer .informacion .info p:nth-child(2) {
+    color: blue;
+}
+
+/* MEDIA QUERIS */
+@media screen and (max-width:1000px) {
+    .adicional .contenedor-grid .texto {
+        grid-row: 2/-1;
+    }
+}
+
+@media screen and (max-width:820px) {
+    header .contenedor {
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    header .logo {
+        width: 100%;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    footer .contenedor {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin: auto;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    header .informacion {
+        flex-flow: column wrap;
+        gap: 20px;
+    }
+
+    .adicional {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .adicional .img {
+        height: 70vh;
+    }
+
+    .adicional .texto {
+        padding: 50px 0;
+        grid-row: 3/12;
+    }
+}
+
+@media screen and (max-width:470px) {
+
+    footer .logo,
+    .informacion {
+        flex-flow: column wrap;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .servicios .contenedor .imagenes {
+        flex-flow: column wrap;
+    }
+
+    main .contenedor .texto h3 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:430px) {
+    nav a {
+        font-size: .7rem;
+    }
+}
